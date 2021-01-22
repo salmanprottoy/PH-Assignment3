@@ -18,6 +18,6 @@ function budgetCalculator(watch, phone, laptop) {
         return ((50 * watch) + (100 * phone) + (500 * laptop));
     }
     else {
-        return "Invalid Input";
+        return "Invalid Input!";
     }
 }
