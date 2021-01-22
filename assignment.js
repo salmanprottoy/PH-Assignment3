@@ -54,3 +54,23 @@ function hotelCost(numberOfDays) {
     }
 }
 
+// Problem 4 - finding largest name from an array of
+function megaFriend(friendsNameList) {
+    if(Array.isArray(friendsNameList)){
+        if(friendsNameList.length > 0){
+            var longestNameLength = 0;
+            var longestName       = friendsNameList[0];
+            for(var i = 0; i < friendsNameList.length; i++){
+                if(friendsNameList[i].length > longestNameLength){
+                    longestNameLength = friendsNameList[i].length;
+                    longestName       = friendsNameList[i];
+                }
+            }
+            return longestName;
+        }else{
+            return "Empty Array!";
+        }
+    }else{
+        return "Invalid Input!";
+    }
+}
